@@ -1,0 +1,300 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: "Poppins", sans-serif;
+}
+
+.cabecalho {
+    background-color: rgb(17, 17, 17);
+    box-shadow: 0 .2rem 1rem;
+}
+
+.cabecalhoDiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: .5rem 5%;
+}
+
+.navUl {
+    display: flex;
+    list-style: none;
+}
+
+.cabecalhoDiv h1 {
+    font-size: 3rem;
+
+}
+
+.cabecalhoDiv h1 a {
+    color: #Fff;
+    text-decoration: none;
+    transition: all 400ms ease-in-out;
+    -webkit-transition: all 400ms ease-in-out;
+    -moz-transition: all 400ms ease-in-out;
+    -ms-transition: all 400ms ease-in-out;
+    -o-transition: all 400ms ease-in-out;
+}
+
+.cabecalhoDiv h1 a:hover{
+    color: #9C2AB0;
+}
+
+.cabecalhoDiv h1:hover {
+    font-size: 3.1rem;
+}
+
+.navUl li {
+    padding: 2rem;
+}
+
+.navUl li a {
+    color: #fff;
+    font-weight: 400;
+    text-decoration: none;
+    transition: all 300ms ease-in-out;
+    -webkit-transition: all 300ms ease-in-out;
+    -moz-transition: all 300ms ease-in-out;
+    -ms-transition: all 300ms ease-in-out;
+    -o-transition: all 300ms ease-in-out;
+}
+
+.navUl li a:hover {
+    color:#9C2AB0;
+}
+
+/* Inicio */
+
+.inicioDiv {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    padding: 0 5%;
+    column-gap: 5rem;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.inicioTexto h2 {
+    font-size: 5rem;
+}
+
+.inicioTexto p {
+    margin-top: 1rem;
+    font-size: 2.2rem;
+}
+
+.inicioSvg {
+    width: 50rem;
+}
+
+.inicioSvg img {
+    width: inherit;
+}
+
+/* Sobre Mim */
+
+.sobreMim {
+    min-height: 100vh;
+    background: rgb(17, 17, 17);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.sobreMimDiv {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+}
+
+.sobreMimFoto {
+    width: 30rem;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+}
+
+.sobreMimTexto {
+    width: 38rem;
+}
+
+.sobreMimTexto h2 {
+    font-size: 3rem;
+}
+
+.sobreMimTexto p {
+    margin-top: 1rem;
+    line-height: 2.6rem;
+    font-size: 2rem;
+}
+
+.sobreMimPortfolio a {
+    color: #9C2AB0;
+    text-decoration: none;
+}
+
+/* Portfolio */
+
+.portfolio {
+    min-height: 100vh;
+    margin-bottom: 5rem;
+    margin-top: 5rem;
+    padding: 0 5%;
+}
+
+.portfolioDiv .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(33rem, 1fr));
+    gap: 4rem;
+}
+
+.portfolioDiv .box-container .box{
+    border: .1rem solid rgb(170, 170, 170);
+    border-radius: .5rem;
+    -webkit-border-radius: .5rem;
+    -moz-border-radius: .5rem;
+    -ms-border-radius: .5rem;
+    -o-border-radius: .5rem;
+    padding: 2rem;
+
+}
+
+.portfolioDiv .box-container .box .image{
+    height: 20rem;
+    overflow: hidden;
+    border-radius: .5rem;
+    -webkit-border-radius: .5rem;
+    -moz-border-radius: .5rem;
+    -ms-border-radius: .5rem;
+    -o-border-radius: .5rem;
+}
+
+.portfolioDiv .box-container .box .image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: all .2s ease-in-out;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -ms-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+}
+
+.portfolioDiv .box-container .box:hover .image img{
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+}
+
+.portfolioDiv .box-container .box .content{
+    padding-top: 1rem;
+}
+
+.portfolioDiv .box-container .box .content .icon{
+    padding: 1rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.portfolioDiv .box-container .box .content .icon a{
+    font-size: 1.4rem;
+    color: var(--light-color);
+}
+
+.portfolioDiv .box-container .box .content .icon a:hover{
+    color: var(--green);
+}
+
+.portfolioDiv .box-container .box .content .icon a i{
+    padding-right: .5rem;
+    color: var(--green);
+}
+
+.portfolioDiv .box-container .box .content h3{
+    color: var(--black);
+    font-size: 3rem;
+}
+
+.portfolioDiv .box-container .box .content p{
+    color: var(--light-color);
+    font-size: 1.5rem;
+    line-height: 1.8;
+    padding: 1rem 0;
+}
+
+.portfolioDiv .box-container .box .content .btn {
+    text-decoration: none;
+    color: #9C2AB0;
+}
+
+/* Contato */
+
+.contato {
+    background-color:  rgb(17, 17, 17);
+    min-height: 15vh;
+}
+
+.contatoDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+.redes {
+    margin-top: .5rem;
+}
+
+.contatoDiv div a {
+    margin: 0 1rem;
+}
+
+.contatoDiv a .fa-brands{
+    font-size: 3rem;
+    color: #fff;
+    transition: all 400ms ease-in-out;
+    -webkit-transition: all 400ms ease-in-out;
+    -moz-transition: all 400ms ease-in-out;
+    -ms-transition: all 400ms ease-in-out;
+    -o-transition: all 400ms ease-in-out;
+}
+
+.contatoDiv a .fa-brands:hover{
+    color: #9C2AB0;
+}
+
+.meContate {
+    font-size: 2.3rem;
+    font-weight: lighter;
+}
+
+.criadoPor {
+    font-weight: lighter;
+}
+
+.nomeFooter {
+    color: #9C2AB0;
+}
+
+
+
